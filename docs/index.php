@@ -16,21 +16,27 @@ function loadMarkdown($filename) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSSlib Documentation</title>
     <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="docs.css">  <!-- Separate styles for docs -->
 </head>
 <body>
 
-    <nav>
-        <a href="?page=components">Components</a>
-        <a href="?page=utilities">Utilities</a>
-        <a href="?page=setup">Setup</a>
-    </nav>
+    <div class="docs-container">
+        <nav class="sidebar">
+            <h2>📖 Docs</h2>
+            <ul>
+                <li><a href="?page=components">Components</a></li>
+                <li><a href="?page=utilities">Utilities</a></li>
+                <li><a href="?page=setup">Setup</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <?php
-        $page = $_GET['page'] ?? 'components';
-        echo loadMarkdown("$page.md");
-        ?>
-    </main>
+        <main class="content">
+            <?php
+            $page = $_GET['page'] ?? 'components';
+            echo loadMarkdown("$page.md");
+            ?>
+        </main>
+    </div>
 
 </body>
 </html>
