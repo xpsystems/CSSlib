@@ -7,11 +7,11 @@ Developed by **[XPSYSTEMS](https://github.com/xpsystems)**.
 ---
 
 ## 🌟 Features  
-✅ Simple and lightweight  
-✅ Customizable CSS variables  
-✅ Responsive grid system  
-✅ Pre-styled buttons, cards, forms, and more  
-✅ Dark mode support (coming soon)  
+- Simple and lightweight  
+- Customizable CSS variables  
+- Responsive grid system  
+- Pre-styled buttons, cards, forms, and more  
+- Dark mode support (coming soon)  
 
 ---
 
