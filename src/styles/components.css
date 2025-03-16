@@ -5,12 +5,30 @@
   font-weight: bold;
   display: inline-block;
   transition: 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
 }
 
-.btn.primary { background: var(--primary-color); color: white; }
-.btn.secondary { background: var(--secondary-color); color: white; }
-.btn.success { background: var(--success-color); color: white; }
-.btn.danger { background: var(--danger-color); color: white; }
+/*  Button Colors */
+.btn-primary { background: var(--primary-color); color: white; }
+.btn-secondary { background: var(--secondary-color); color: white; }
+.btn-success { background: var(--success-color); color: white; }
+.btn-danger { background: var(--danger-color); color: white; }
+
+/* 🎨 Extra Color Buttons */
+.btn-blue { background: var(--blue); color: white; }
+.btn-green { background: var(--green); color: white; }
+.btn-red { background: var(--red); color: white; }
+.btn-yellow { background: var(--yellow); color: black; }
+.btn-purple { background: var(--purple); color: white; }
+.btn-pink { background: var(--pink); color: white; }
+.btn-aqua { background: var(--aqua); color: white; }
+.btn-lime { background: var(--lime); color: black; }
+
+/* Hover Effect */
+.btn:hover {
+  opacity: 0.8;
+}
 
 .card {
   background: white;
