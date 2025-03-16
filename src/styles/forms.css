@@ -1,9 +1,11 @@
+/* Basic Form Styling */
 input, select, textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 8px 0;
     border-radius: 5px;
     border: 1px solid var(--secondary-color);
+    font-size: 16px;
 }
 
 input:focus, textarea:focus {
@@ -11,6 +13,19 @@ input:focus, textarea:focus {
     border: 1px solid var(--primary-color);
 }
 
+/* Form Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Submit Button */
 .btn.submit {
     background: var(--success-color);
     color: white;
