@@ -1,0 +1,47 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Primary Button */
+  .btn.primary {
+    background: var(--primary-color);
+  }
+  
+  .btn.primary:hover {
+    background: var(--primary-hover);
+  }
+  
+  /* Secondary Button */
+  .btn.secondary {
+    background: var(--secondary-color);
+  }
+  
+  .btn.secondary:hover {
+    background: var(--secondary-hover);
+  }
+  
+  /* Success Button */
+  .btn.success {
+    background: var(--success-color);
+  }
+  
+  /* Danger Button */
+  .btn.danger {
+    background: var(--danger-color);
+  }
+  
+  /* Warning Button */
+  .btn.warning {
+    background: var(--warning-color);
+  }
+  
