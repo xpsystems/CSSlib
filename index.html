@@ -8,64 +8,55 @@
 </head>
 <body>
 
-    <header class="navbar">
-        <h1>CSSlib</h1>
-        <nav>
-            <a href="docs/index.php">Docs</a>
-            <a href="index.html">Demo</a>
-        </nav>
-    </header>
-
-    <section class="container">
-        <h2>Buttons</h2>
-        <a href="#" class="btn primary">Primary</a>
-        <a href="#" class="btn secondary">Secondary</a>
-        <a href="#" class="btn success">Success</a>
-        <a href="#" class="btn danger">Danger</a>
-    </section>
-
-    <section class="container">
-        <h2>Cards</h2>
-        <div class="card">
-            <h3>Card Title</h3>
-            <p>This is a simple card component.</p>
-            <a href="#" class="btn primary">Read More</a>
-        </div>
-    </section>
-    <button id="dark-mode-toggle">Toggle Dark Mode</button>
-    <script src="scripts/dark-mode.js"></script>
-    
-    <div id="preloader"></div>
-    <script src="scripts/preload.js"></script>
-
+    <h1>Welcome to CSSlib</h1>
 
     <!-- Buttons -->
-    <button class="btn btn-blue">Blue Button</button>
-    <button class="btn btn-green">Green Button</button>
-    <button class="btn btn-red">Red Button</button>
-    <button class="btn btn-yellow">Yellow Button</button>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-success">Success</button>
 
-    <!-- Text Colors -->
-    <p class="text-red">This is a red text.</p>
-    <p class="text-green">This is a green text.</p>
-    <p class="text-aqua">This is an aqua text.</p>
+    <!-- Cards -->
+    <div class="card primary">
+        <h3>Primary Card</h3>
+        <p>This is a primary card.</p>
+    </div>
 
-    <!-- Background Colors -->
-    <div class="bg-purple">This has a purple background.</div>
-    <div class="bg-lime">This has a lime background.</div>
-    
+    <!-- Alerts -->
+    <div class="alert success">This is a success alert.</div>
+
+    <!-- Dropdown -->
     <div class="dropdown">
-        <button class="btn btn-primary">Dropdown</button>
+        <button class="btn btn-secondary">Dropdown</button>
         <div class="dropdown-content">
             <a href="#">Option 1</a>
             <a href="#">Option 2</a>
-            <a href="#">Option 3</a>
         </div>
     </div>
+
+    <!-- Tooltip -->
     <div class="tooltip">
-        <button class="btn btn-success">Hover Me</button>
+        <button class="btn btn-danger">Hover Me</button>
         <span class="tooltip-text">Tooltip Info</span>
     </div>
+
+    <!-- Modal -->
+    <button onclick="openModal()">Open Modal</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>This is a modal popup.</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Forms -->
+    <form>
+        <input type="text" placeholder="Your Name">
+        <button class="btn submit">Submit</button>
+    </form>
+
+    <script>
+        function openModal() { document.getElementById("myModal").classList.add("active"); }
+        function closeModal() { document.getElementById("myModal").classList.remove("active"); }
+    </script>
 
 </body>
 </html>
