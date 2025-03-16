@@ -8,3 +8,7 @@ body {
     color: var(--dark-color);
     scroll-behavior: smooth;
 }
+.dark-mode {
+    background: var(--dark-color);
+    color: var(--light-color);
+}
