@@ -6,5 +6,5 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: var(--light-color);
     color: var(--dark-color);
-    scroll-behavior: smooth; /* Enables smooth scrolling */
+    scroll-behavior: smooth;
 }
