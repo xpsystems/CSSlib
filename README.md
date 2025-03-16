@@ -95,12 +95,8 @@ CSSlib is open-source under the MIT License.
 
 ## 🔜 Next Steps  
 -  Host CSSlib on a CDN
-<<<<<<< HEAD
 -  Add a dark mode toggle  
 -  Improve mobile responsiveness  
-=======
--  Include from our Servers
 -  Add a dark mode toggle  
 -  Improve mobile responsiveness  
 
->>>>>>> 2894725fc76c6d4c33487424718bcbc21fb5c97c
