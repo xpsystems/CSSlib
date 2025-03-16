@@ -13,6 +13,11 @@
     z-index: 1000;
 }
 
+.dropdown-content.active {
+    display: block;
+}
+
+
 .dropdown-content a {
     color: black;
     padding: 10px;

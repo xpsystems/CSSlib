@@ -8,55 +8,73 @@
 </head>
 <body>
 
-    <h1>Welcome to CSSlib</h1>
+    <h1>Welcome to CSSlib 🎨</h1>
 
-    <!-- Buttons -->
+    <!-- 🔹 Buttons -->
+    <h2>Buttons</h2>
     <button class="btn btn-primary">Primary</button>
     <button class="btn btn-success">Success</button>
+    <button class="btn btn-danger">Danger</button>
 
-    <!-- Cards -->
+    <!-- 🔹 Alerts -->
+    <h2>Alerts</h2>
+    <div class="alert success" data-timeout="3000">Success! This will disappear in 3s.</div>
+    <div class="alert danger" data-timeout="5000">Error! This will disappear in 5s.</div>
+    <div class="alert warning">Warning! Check your input.</div>
+
+    <!-- 🔹 Cards -->
+    <h2>Cards</h2>
     <div class="card primary">
         <h3>Primary Card</h3>
         <p>This is a primary card.</p>
     </div>
 
-    <!-- Alerts -->
-    <div class="alert success">This is a success alert.</div>
+    <div class="card success card-shadow">
+        <h3>Success Card</h3>
+        <p>This card has a shadow effect.</p>
+    </div>
 
-    <!-- Dropdown -->
+    <!-- 🔹 Dropdown -->
+    <h2>Dropdown</h2>
     <div class="dropdown">
         <button class="btn btn-secondary">Dropdown</button>
         <div class="dropdown-content">
             <a href="#">Option 1</a>
             <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
         </div>
     </div>
 
-    <!-- Tooltip -->
+    <!-- 🔹 Tooltip -->
+    <h2>Tooltip</h2>
     <div class="tooltip">
         <button class="btn btn-danger">Hover Me</button>
         <span class="tooltip-text">Tooltip Info</span>
     </div>
 
-    <!-- Modal -->
-    <button onclick="openModal()">Open Modal</button>
+    <!-- 🔹 Modal -->
+    <h2>Modal</h2>
+    <button data-modal="myModal">Open Modal</button>
+
     <div id="myModal" class="modal">
         <div class="modal-content">
             <p>This is a modal popup.</p>
-            <button onclick="closeModal()">Close</button>
+            <button class="modal-close">Close</button>
         </div>
     </div>
 
-    <!-- Forms -->
+    <!-- 🔹 Forms -->
+    <h2>Forms</h2>
     <form>
         <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
         <button class="btn submit">Submit</button>
     </form>
 
-    <script>
-        function openModal() { document.getElementById("myModal").classList.add("active"); }
-        function closeModal() { document.getElementById("myModal").classList.remove("active"); }
-    </script>
+    <!-- 🔹 Dark Mode Toggle -->
+    <h2>Dark Mode</h2>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
 
+    <script src="src/scripts/main.js" type="module"></script>
 </body>
 </html>
