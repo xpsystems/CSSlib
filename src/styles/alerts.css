@@ -1,0 +1,12 @@
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+}
+
+.alert.success { background: var(--success-color); }
+.alert.danger { background: var(--danger-color); }
+.alert.warning { background: var(--yellow); color: black; }
+.alert.info { background: var(--blue); }

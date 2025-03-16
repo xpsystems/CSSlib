@@ -1,0 +1,15 @@
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* 🌟 Card Variants */
+.card.primary { border-left: 5px solid var(--primary-color); }
+.card.success { border-left: 5px solid var(--success-color); }
+.card.danger { border-left: 5px solid var(--danger-color); }
+
+.card-shadow { box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); }
+.card-rounded { border-radius: 15px; }
