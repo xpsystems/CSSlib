@@ -1,12 +1,38 @@
+/* Basic Alert Styling */
 .alert {
-    padding: 15px;
-    border-radius: 5px;
+    position: relative;
+    padding: 15px 20px;
     margin: 10px 0;
-    color: white;
-    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-.alert.success { background: var(--success-color); }
-.alert.danger { background: var(--danger-color); }
-.alert.warning { background: var(--yellow); color: black; }
-.alert.info { background: var(--blue); }
+/* Alert Colors */
+.alert.success { background: #d4edda; color: #155724; border-left: 5px solid #28a745; }
+.alert.danger { background: #f8d7da; color: #721c24; border-left: 5px solid #dc3545; }
+.alert.warning { background: #fff3cd; color: #856404; border-left: 5px solid #ffc107; }
+
+/* Close Button */
+.alert .close-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: inherit;
+    margin-left: 15px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.alert .close-btn:hover {
+    opacity: 0.6;
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+    to { opacity: 0; transform: translateY(-10px); }
+}
