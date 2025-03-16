@@ -69,7 +69,7 @@ Edit ``_variables.css`` to customize:
 ## 🛠 Development & Contribution
 ### Clone the Repository
 ````
-git clone https://github.com/YOUR-USERNAME/CSSlib.git
+git clone https://github.com/xpsystems/CSSlib.git
 cd CSSlib
 ````
 ### Run Locally (with Live Server)
