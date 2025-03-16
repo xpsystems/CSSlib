@@ -21,7 +21,7 @@ Developed by **[XPSYSTEMS](https://github.com/xpsystems)**.
 ```html
 <link rel="stylesheet" href="https://cdn.csslib.eu/csslib.min.css">
 ````
-### Option 2: Download & Include
+### Option 2: Download & Include (Coming Soon)
 1. Download the ``CSSlib`` source files.
 2. Include ``main.css`` in your HTML file:
 ```html
