@@ -21,7 +21,7 @@ Developed by **[XPSYSTEMS](https://github.com/xpsystems)**.
 ```html
 <link rel="stylesheet" href="https://cdn.csslib.eu/csslib.min.css">
 ````
-### Option 2: Download & Include (Coming Soon)
+### Option 2: Download & Include 
 1. Download the ``CSSlib`` source files.
 2. Include ``main.css`` in your HTML file:
 ```html
@@ -94,8 +94,6 @@ CSSlib is open-source under the MIT License.
 ---
 
 ## 🔜 Next Steps  
-- ✅ Host CSSlib on a CDN  
-- ✅ Add a dark mode toggle  
-- ✅ Improve mobile responsiveness  
-
-Would you like me to add an **auto-generated docs page** next? 🚀  
+-  Host CSSlib on a CDN
+-  Add a dark mode toggle  
+-  Improve mobile responsiveness  
