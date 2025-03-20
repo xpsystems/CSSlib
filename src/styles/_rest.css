@@ -1,14 +1,34 @@
-* {
-    padding:0;
-    margin:0;
+/* _reset.css - A simple CSS reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 16px;
+}
+
 body {
-    font-family: 'Nunito', sans-serif;
-    background-color: var(--light-color);
-    color: var(--dark-color);
-    scroll-behavior: smooth;
+  line-height: 1.5;
+  font-family: 'Nunito', sans-serif;
 }
-.dark-mode {
-    background: var(--dark-color);
-    color: var(--light-color);
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set images to block by default */
+img {
+  max-width: 100%;
+  display: block;
 }

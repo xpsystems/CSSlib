@@ -1,47 +1,29 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: var(--primary-color);
-    color: white;
-}
-
-.navbar h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.navbar nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.navbar nav a:hover {
-    text-decoration: underline;
-}
-
-#preloader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: white;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.5s ease;
-}
-
+/* base.css - Basic typography and global styles */
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: var(--light-color);
-    color: var(--dark-color);
-    scroll-behavior: smooth;
-}
-
-h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
     font-weight: 600;
-}
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  
+  /* Links */
+  a:hover {
+    opacity: 0.8;
+  }
+  
