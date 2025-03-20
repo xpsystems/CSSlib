@@ -10,7 +10,19 @@
 
   <!-- Header with Dark Mode Toggle -->
   <header class="container" style="text-align: right; padding: 1rem;">
-    <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
+    <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">CSSlib</a>
+          <ul class="nav-links">
+            <li><a href="#alerts">Alerts</a></li>
+            <li><a href="#tooltips">Tooltips</a></li>
+            <li><a href="#dropdowns">Dropdowns</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#modals">Modals</a></li>
+          </ul>
+          <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
+        </div>
+      </nav>
   </header>
 
   <main class="container">
@@ -23,9 +35,15 @@
       <div class="alert success" data-timeout="4000">
         Success Alert (auto-close)! <span class="close-btn">&times;</span>
       </div>
+      <div class="alert warning" data-timeout="5000">
+        Warning Alert (auto-close)! <span class="close-btn">&times;</span>
+      </div>
       <!-- Manual close alert -->
       <div class="alert danger">
         Error Alert (manual close)! <span class="close-btn">&times;</span>
+      </div>
+      <div class="alert warning" >
+        Warning Alert (manual close)! <span class="close-btn">&times;</span>
       </div>
     </section>
 
@@ -33,7 +51,7 @@
     <section>
       <h2>Tooltips</h2>
       <p>Hover over the text below:</p>
-      <span class="tooltip">Hover me
+      <span class="btn btn-orange tooltip">Hover me
         <span class="tooltip-text">This is a tooltip sample!</span>
       </span>
     </section>

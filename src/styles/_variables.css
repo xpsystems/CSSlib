@@ -33,9 +33,8 @@
   --input-bg: #ffffff;
   --input-border: #ccc;
   --modal-bg: #ffffff;
-  --alert-bg: #f8d7da;
-  --alert-text: #721c24;
   --btn-hover-opacity: 0.9;
+  --navbar-bg: #e9ecef;
 }
 
 /* 🌙 Override variables for Dark Theme */
@@ -74,7 +73,6 @@ body[data-theme="dark"] {
   --input-bg: #262626;
   --input-border: #444;
   --modal-bg: #1c1c1c;
-  --alert-bg: #661c1c;
-  --alert-text: #f8d7da;
   --btn-hover-opacity: 0.85;
+  --navbar-bg: #1a1a1a;
 }
