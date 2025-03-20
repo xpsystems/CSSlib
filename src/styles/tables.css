@@ -1,3 +1,4 @@
+/* Default Table Style */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -8,7 +9,7 @@ table {
     overflow: hidden;
 }
 
-/* Table Headers */
+/* Table Headers (Default uses --primary-color) */
 th {
     background: var(--primary-color);
     color: white;
@@ -23,12 +24,65 @@ th, td {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Alternate Row Background */
+/* Alternate Row Background (Striped) */
 tr:nth-child(even) {
     background: rgba(0, 0, 0, 0.05);
 }
 
-/* Hover Effect */
+/* Hover Effect for Rows */
 tr:hover {
     background: var(--shadow-color);
+}
+
+/* Additional Table Variants */
+
+/* Bordered Table */
+.table-bordered {
+    border: 1px solid var(--border-color);
+}
+.table-bordered th, .table-bordered td {
+    border: 1px solid var(--border-color);
+}
+
+/* Hover Table (Alternate) */
+.table-hover tr:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Small Table */
+.table-sm th, .table-sm td {
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Table Header Color Variants */
+/* Use these classes on your table element to override the default header color */
+
+.table-header-red th {
+    background: var(--red);
+}
+.table-header-blue th {
+    background: var(--blue);
+}
+.table-header-green th {
+    background: var(--green);
+}
+.table-header-orange th {
+    background: var(--orange);
+}
+.table-header-purple th {
+    background: var(--purple);
+}
+.table-header-pink th {
+    background: var(--pink);
+}
+.table-header-aqua th {
+    background: var(--aqua);
+}
+.table-header-lime th {
+    background: var(--lime);
+}
+.table-header-info th {
+    background: var(--info-color);
 }

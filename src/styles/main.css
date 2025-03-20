@@ -16,6 +16,7 @@
 @import url('animations.css');
 @import url('darkmode.css');
 @import url('navbar.css');
+
 /* Scroll-to-Top Button */
 #scrollTopBtn {
     position: fixed;
