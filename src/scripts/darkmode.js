@@ -21,5 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateDarkModeButton(theme) {
         darkModeToggle.textContent = theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
+        darkModeToggle.textContent = theme === "dark" ? "☀️ " : "🌙";
     }
 });
