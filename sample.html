@@ -3,134 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSSlib Demo</title>
-    
-    <!-- Stylesheets -->
+    <title>CSSlib Sample</title>
     <link rel="stylesheet" href="src/styles/main.css">
 </head>
-<body>
+<body data-theme="light"> <!-- Default theme is light -->
 
+<nav class="navbar">
     <div class="container">
-        <h1 class="fade-in">Welcome to CSSlib 🎨</h1>
-
-        <!-- 🔹 Buttons -->
-        <h2>Buttons</h2>
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-success">Success</button>
-        <button class="btn btn-danger">Danger</button>
-        <button class="btn btn-secondary">Secondary</button>
-
-        <!-- 🔹 Alerts -->
-        <h2>Alerts</h2>
-
-        <div class="alert success" data-timeout="3000">
-            Success! This will disappear in 3s.
-            <button class="close-btn">&times;</button>
-        </div>
-
-        <div class="alert danger">
-            Error! Click the button to close.
-            <button class="close-btn">&times;</button>
-        </div>
-
-        <div class="alert warning">
-            Warning! Check your input.
-            <button class="close-btn">&times;</button>
-        </div>
-
-
-        <!-- 🔹 Cards -->
-        <h2>Cards</h2>
-        <div class="card primary slide-up">
-            <h3>Primary Card</h3>
-            <p>This is a primary card.</p>
-        </div>
-
-        <div class="card success card-shadow">
-            <h3>Success Card</h3>
-            <p>This card has a shadow effect.</p>
-        </div>
-
-        <!-- 🔹 Dropdown -->
-        <h2>Dropdown</h2>
-        <div class="dropdown">
-            <button class="btn btn-secondary">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Option 1</a>
-                <a href="#">Option 2</a>
-                <a href="#">Option 3</a>
-            </div>
-        </div>
-
-        <!-- 🔹 Tooltip -->
-        <h2>Tooltip</h2>
-        <div class="tooltip">
-            <button class="btn btn-danger">Hover Me</button>
-            <span class="tooltip-text">Tooltip Info</span>
-        </div>
-
-        <!-- 🔹 Modal -->
-        <h2>Modal</h2>
-        <button data-modal="myModal">Open Modal</button>
-
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <p>This is a modal popup.</p>
-                <button class="modal-close">Close</button>
-            </div>
-        </div>
-
-        <!-- 🔹 Forms -->
-        <h2>Forms</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email">
-            </div>
-            <button class="btn submit">Submit</button>
-        </form>
-
-        <!-- 🔹 Tables -->
-        <h2>Table</h2>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Role</th>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>Admin</td>
-            </tr>
-            <tr>
-                <td>Jane Smith</td>
-                <td>jane@example.com</td>
-                <td>User</td>
-            </tr>
-        </table>
-
-        <!-- 🔹 Grid System -->
-        <h2>Grid System</h2>
-        <div class="row">
-            <div class="col-6">
-                <div class="card">Column 1</div>
-            </div>
-            <div class="col-6">
-                <div class="card">Column 2</div>
-            </div>
-        </div>
-
-        <!-- 🔹 Dark Mode Toggle -->
-        <h2>Dark Mode</h2>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <a href="index.php" class="logo">CSSlib</a>
+        <ul class="nav-links">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="docs.php">Docs</a></li>
+            <li><a href="sample.html">Sample</a></li>
+        </ul>
     </div>
+</nav>
 
-    <!-- JavaScript -->
-    <script src="src/scripts/main.js" type="module"></script>
+<div class="container">
+    <h1>Sample Page</h1>
+    <p>This is a standalone HTML page showcasing CSSlib.</p>
+
+    <h2>Dark Mode Toggle</h2>
+    <button id="darkModeToggle" class="dark-mode-btn">🌙 Toggle Dark Mode</button>
+
+    <h2>Buttons</h2>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-danger">Danger</button>
+
+    <h2>Grid System</h2>
+    <div class="row">
+        <div class="col-6"><div class="card">Column 1</div></div>
+        <div class="col-6"><div class="card">Column 2</div></div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <p>💡 Developed with ❤️ by XPSYSTEMS | &copy; 2025</p>
+    </div>
+</footer>
+
+<script src="src/scripts/main.js"></script>
+<script src="src/scripts/darkmode.js"></script>
 </body>
 </html>

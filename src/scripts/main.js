@@ -1,12 +1,9 @@
 import "./preload.js";
-import "./dark-mode.js";
+import "./darkmode.js";
 import './alerts.js';
 import './dropdowns.js';
 import './tooltips.js';
 import './modal.js';
+import "./darkmode.js";
 
 console.log("CSSlib Loaded Successfully!");
-
-document.getElementById("darkModeToggle").addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-});
