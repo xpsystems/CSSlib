@@ -1,4 +1,4 @@
-/* 🏁 Margins */
+/* Margins */
 .m-0 { margin: 0 !important; }
 .m-1 { margin: 5px !important; }
 .m-2 { margin: 10px !important; }
@@ -19,7 +19,7 @@
 .mr-1 { margin-right: 5px !important; }
 .mr-2 { margin-right: 10px !important; }
 
-/* 🏁 Paddings */
+/* Paddings */
 .p-0 { padding: 0 !important; }
 .p-1 { padding: 5px !important; }
 .p-2 { padding: 10px !important; }

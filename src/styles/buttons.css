@@ -1,4 +1,4 @@
-/* General Button Styles */
+/* Base Button Styles */
 .btn {
     padding: 10px 20px;
     border-radius: 5px;
@@ -10,85 +10,155 @@
     cursor: pointer;
 }
 
-/* Filled Button Styles */
+/* Filled Variants */
 .btn-primary { background: var(--primary-color); color: white; }
 .btn-secondary { background: var(--secondary-color); color: white; }
 .btn-success { background: var(--success-color); color: white; }
 .btn-danger { background: var(--danger-color); color: white; }
-
-/* 🎨 Extra Color Buttons */
 .btn-blue { background: var(--blue); color: white; }
+.btn-orange { background: var(--orange); color: white; }
 .btn-green { background: var(--green); color: white; }
-.btn-red { background: var(--red); color: white; }
 .btn-yellow { background: var(--yellow); color: black; }
 .btn-purple { background: var(--purple); color: white; }
 .btn-pink { background: var(--pink); color: white; }
-.btn-orange { background: var(--orange); color: white; }
 .btn-aqua { background: var(--aqua); color: white; }
 .btn-lime { background: var(--lime); color: black; }
 
-/* 🎯 Lower Opacity on Hover */
+/* Lower Opacity on Hover for Filled Buttons */
 .btn:hover {
     opacity: 0.8;
 }
 
-/* 🌟 Outline Button Styles */
-.btn-outline {
-    background: transparent;
-    border: 2px solid var(--btn-color, var(--primary-color)); /* Default color */
-    color: var(--btn-color, var(--primary-color));
-}
+/* Outline Variant Modifier */
+/* When a button has both a color variant (e.g., .btn-red) and the .outline class, it becomes an outline button. */
 
-/* 🟢 Outline Button Hover Effect: Fill with same color */
-.btn-outline:hover {
-    background: var(--btn-color, var(--primary-color));
+/* Example for red: */
+.btn-red {
+    background: var(--red);
     color: white;
 }
-
-/* 🔥 Dynamic Outline Classes (for convenience) */
-.btn-red-outline, 
-.btn.red.outline, 
-.btn.btn-red.outline {
-    --btn-color: var(--red);
-    border-color: var(--red);
+.btn-red.outline {
+    background: transparent;
+    border: 2px solid var(--red);
     color: var(--red);
 }
-
-.btn-red-outline:hover, 
-.btn.red.outline:hover, 
-.btn.btn-red.outline:hover {
+.btn-red.outline:hover {
     background: var(--red);
     color: white;
 }
 
-.btn-blue-outline, 
-.btn.blue.outline, 
-.btn.btn-blue.outline {
-    --btn-color: var(--blue);
-    border-color: var(--blue);
+/* Similarly for blue: */
+.btn-blue {
+    background: var(--blue);
+    color: white;
+}
+.btn-blue.outline {
+    background: transparent;
+    border: 2px solid var(--blue);
     color: var(--blue);
 }
-
-.btn-blue-outline:hover, 
-.btn.blue.outline:hover, 
-.btn.btn-blue.outline:hover {
+.btn-blue.outline:hover {
     background: var(--blue);
     color: white;
 }
 
-.btn-green-outline, 
-.btn.green.outline, 
-.btn.btn-green.outline {
-    --btn-color: var(--green);
-    border-color: var(--green);
+/* For green: */
+.btn-green {
+    background: var(--green);
+    color: white;
+}
+.btn-green.outline {
+    background: transparent;
+    border: 2px solid var(--green);
     color: var(--green);
 }
-
-.btn-green-outline:hover, 
-.btn.green.outline:hover, 
-.btn.btn-green.outline:hover {
+.btn-green.outline:hover {
     background: var(--green);
     color: white;
 }
 
-/* Add more colors as needed */
+/* For purple: */
+.btn-purple {
+    background: var(--purple);
+    color: white;
+}
+.btn-purple.outline {
+    background: transparent;
+    border: 2px solid var(--purple);
+    color: var(--purple);
+}
+.btn-purple.outline:hover {
+    background: var(--purple);
+    color: white;
+}
+
+.btn-pink {
+    background: var(--pink);
+    color: white;
+}
+.btn-pink.outline {
+    background: transparent;
+    border: 2px solid var(--pink);
+    color: var(--pink);
+}
+.btn-pink.outline:hover {
+    background: var(--pink);
+    color: white;
+}
+
+.btn-yellow {
+    background: var(--yellow);
+    color: black;
+}
+.btn-yellow.outline {
+    background: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+}
+.btn-yellow.outline:hover {
+    background: var(--yellow);
+    color: white;
+}
+
+.btn-aqua {
+    background: var(--aqua);
+    color: white;
+}
+.btn-aqua.outline {
+    background: transparent;
+    border: 2px solid var(--aqua);
+    color: var(--aqua);
+}
+.btn-aqua.outline:hover {
+    background: var(--aqua);
+    color: white;
+}
+
+.btn-lime {
+    background: var(--lime);
+    color: black;
+}
+.btn-lime.outline {
+    background: transparent;
+    border: 2px solid var(--lime);
+    color: var(--lime);
+}
+.btn-lime.outline:hover {
+    background: var(--lime);
+    color: white;
+}
+
+.btn-orange {
+    background: var(--orange);
+    color: black;
+}
+.btn-orange.outline {
+    background: transparent;
+    border: 2px solid var(--orange);
+    color: var(--orange);
+}
+.btn-orange.outline:hover {
+    background: var(--orange);
+    color: white;
+}
+/* Add additional variants similarly if needed */
