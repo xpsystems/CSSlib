@@ -3,32 +3,53 @@
     display: inline-block;
 }
 
+/* Dropdown Button */
+.dropdown-btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.dropdown-btn:hover {
+    background: var(--secondary-color);
+}
+
+/* Dropdown Content */
 .dropdown-content {
     display: none;
     position: absolute;
-    background: white;
-    min-width: 160px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    background: var(--card-bg);
+    min-width: 180px;
+    box-shadow: 0px 4px 6px var(--shadow-color);
+    border-radius: 6px;
     z-index: 1000;
+    border: 1px solid var(--border-color);
 }
 
+/* Active State */
 .dropdown-content.active {
     display: block;
 }
 
-
+/* Dropdown Links */
 .dropdown-content a {
-    color: black;
+    color: var(--text-color);
     padding: 10px;
     text-decoration: none;
     display: block;
+    font-size: 14px;
 }
 
 .dropdown-content a:hover {
     background: var(--light-color);
 }
 
+/* Auto-Show on Hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }

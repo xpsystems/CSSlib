@@ -1,51 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSSlib Sample</title>
-    <link rel="stylesheet" href="src/styles/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSSlib Samples</title>
+  <link rel="stylesheet" href="src/styles/main.css" />
 </head>
-<body data-theme="light"> <!-- Default theme is light -->
+<body data-theme="light">
 
-<nav class="navbar">
-    <div class="container">
-        <a href="index.php" class="logo">CSSlib</a>
-        <ul class="nav-links">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="docs.php">Docs</a></li>
-            <li><a href="sample.html">Sample</a></li>
-        </ul>
-    </div>
-</nav>
+  <!-- Header with Dark Mode Toggle -->
+  <header class="container" style="text-align: right; padding: 1rem;">
+    <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
+  </header>
 
-<div class="container">
-    <h1>Sample Page</h1>
-    <p>This is a standalone HTML page showcasing CSSlib.</p>
+  <main class="container">
+    <h1>CSSlib Component Samples</h1>
 
-    <h2>Dark Mode Toggle</h2>
-    <button id="darkModeToggle" class="dark-mode-btn">🌙 Toggle Dark Mode</button>
+    <!-- Alerts -->
+    <section>
+      <h2>Alerts</h2>
+      <!-- Timed alert (auto-closes in 4000ms) -->
+      <div class="alert success" data-timeout="4000">
+        Success Alert (auto-close)! <span class="close-btn">&times;</span>
+      </div>
+      <!-- Manual close alert -->
+      <div class="alert danger">
+        Error Alert (manual close)! <span class="close-btn">&times;</span>
+      </div>
+    </section>
 
-    <h2>Buttons</h2>
-    <button class="btn btn-primary">Primary</button>
-    <button class="btn btn-success">Success</button>
-    <button class="btn btn-danger">Danger</button>
+    <!-- Tooltips -->
+    <section>
+      <h2>Tooltips</h2>
+      <p>Hover over the text below:</p>
+      <span class="tooltip">Hover me
+        <span class="tooltip-text">This is a tooltip sample!</span>
+      </span>
+    </section>
 
-    <h2>Grid System</h2>
-    <div class="row">
-        <div class="col-6"><div class="card">Column 1</div></div>
-        <div class="col-6"><div class="card">Column 2</div></div>
-    </div>
-</div>
+    <!-- Dropdowns -->
+    <section>
+      <h2>Dropdowns</h2>
+      <div class="dropdown">
+        <button class="dropdown-btn">Dropdown Sample</button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+    </section>
 
+    <!-- Table -->
+    <section>
+      <h2>Tables</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Role</th>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>30</td>
+          <td>Developer</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>28</td>
+          <td>Designer</td>
+        </tr>
+      </table>
+    </section>
 
-<footer>
-    <div class="container">
-        <p>💡 Developed with ❤️ by XPSYSTEMS | &copy; 2025</p>
-    </div>
-</footer>
+    <!-- Modal Trigger & Modal -->
+    <section>
+      <h2>Modals</h2>
+      <!-- Button with data-modal attribute -->
+      <button data-modal="sampleModal" class="btn btn-primary">Open Modal</button>
+      <!-- Modal Overlay -->
+      <div id="modalOverlay" class="modal-overlay"></div>
+      <!-- Modal Structure -->
+      <div id="sampleModal" class="modal">
+        <div class="modal-content">
+          <h3>Sample Modal</h3>
+          <p>This modal adapts to both light and dark themes!</p>
+          <button class="modal-close btn btn-secondary">Close</button>
+        </div>
+      </div>
+    </section>
 
-<script src="src/scripts/main.js"></script>
-<script src="src/scripts/darkmode.js"></script>
+    <!-- Additional Samples -->
+    <section>
+      <h2>Additional Component Samples</h2>
+      <!-- Card Sample -->
+      <div class="card primary">
+        <h3>Primary Card</h3>
+        <p>This card uses the theme variables and adapts to dark mode.</p>
+      </div>
+      <!-- Form Sample -->
+      <form>
+        <div class="form-group">
+          <label for="sampleInput">Sample Input</label>
+          <input type="text" id="sampleInput" placeholder="Enter something..." />
+        </div>
+        <button type="submit" class="btn submit">Submit Form</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- JavaScript Modules -->
+  <script src="src/scripts/main.js" type="module"></script>
 </body>
 </html>
