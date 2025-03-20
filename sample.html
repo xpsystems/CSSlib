@@ -33,186 +33,254 @@
           </ul>
         </li>
       </ul>
-      <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
+      <button id="darkModeToggle" class="dark-mode-btn">Dark Mode</button>
     </div>
   </nav>
 
   <main class="container">
     <h1>CSSlib Component Samples</h1>
 
-    
+    <!-- Buttons Section -->
     <section id="buttons">
       <h2>Buttons</h2>
       
-     <!-- Filled Buttons -->
-        <h3>Filled Buttons</h3>
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-secondary">Secondary</button>
-        <button class="btn btn-success">Success</button>
-        <button class="btn btn-danger">Danger</button>
-        <button class="btn btn-blue">Blue</button>
-        <button class="btn btn-orange">Orange</button>
-        <button class="btn btn-green">Green</button>
-        <button class="btn btn-yellow">Yellow</button>
-        <button class="btn btn-purple">Purple</button>
-        <button class="btn btn-pink">Pink</button>
-        <button class="btn btn-aqua">Aqua</button>
-        <button class="btn btn-lime">Lime</button>
-        <button class="btn btn-info">Info</button>
-
-        <!-- Outline Buttons -->
-        <h3>Outline Buttons</h3>
-        <button class="btn btn-red outline">Red</button>
-        <button class="btn btn-blue outline">Blue</button>
-        <button class="btn btn-green outline">Green</button>
-        <button class="btn btn-purple outline">Purple</button>
-        <button class="btn btn-pink outline">Pink</button>
-        <button class="btn btn-yellow outline">Yellow</button>
-        <button class="btn btn-aqua outline">Aqua</button>
-        <button class="btn btn-lime outline">Lime</button>
-        <button class="btn btn-orange outline">Orange</button>
+      <!-- Filled Buttons -->
+      <h3>Filled Buttons</h3>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-blue">Blue</button>
+      <button class="btn btn-orange">Orange</button>
+      <button class="btn btn-green">Green</button>
+      <button class="btn btn-yellow">Yellow</button>
+      <button class="btn btn-purple">Purple</button>
+      <button class="btn btn-pink">Pink</button>
+      <button class="btn btn-aqua">Aqua</button>
+      <button class="btn btn-lime">Lime</button>
+      <button class="btn btn-info">Info</button>
+      
+      <!-- Outline Buttons -->
+      <h3>Outline Buttons</h3>
+      <button class="btn btn-red outline">Red</button>
+      <button class="btn btn-blue outline">Blue</button>
+      <button class="btn btn-green outline">Green</button>
+      <button class="btn btn-purple outline">Purple</button>
+      <button class="btn btn-pink outline">Pink</button>
+      <button class="btn btn-yellow outline">Yellow</button>
+      <button class="btn btn-aqua outline">Aqua</button>
+      <button class="btn btn-lime outline">Lime</button>
+      <button class="btn btn-orange outline">Orange</button>
     </section>
 
-
-
-    <!-- Alerts -->
+    <!-- Alerts Section -->
     <section id="alerts">
       <h2>Alerts</h2>
-      <div class="alert success" data-timeout="4000">Success Alert! <span class="close-btn">&times;</span></div>
-      <div class="alert warning" data-timeout="5000">Warning Alert! <span class="close-btn">&times;</span></div>
-      <div class="alert danger">Error Alert! <span class="close-btn">&times;</span></div>
-      <div class="alert warning">Warning Alert! <span class="close-btn">&times;</span></div>
+      <div class="alert success" data-timeout="4000">
+        Success Alert! <span class="close-btn">&times;</span>
+      </div>
+      <div class="alert warning" data-timeout="5000">
+        Warning Alert! <span class="close-btn">&times;</span>
+      </div>
+      <div class="alert danger">
+        Error Alert! <span class="close-btn">&times;</span>
+      </div>
+      <div class="alert warning">
+        Warning Alert! <span class="close-btn">&times;</span>
+      </div>
     </section>
 
-    <!-- Tooltips -->
+    <!-- Tooltips Section -->
     <section id="tooltips">
-        <h2>Tooltips</h2>
-        <p>Hover over the buttons below to see different tooltip positions:</p>
-    
-        <div class="tooltip">
-            <button class="btn btn-primary">Top Tooltip</button>
-            <span class="tooltip-text">Tooltip on Top</span>
-        </div>
-    
-        <div class="tooltip bottom">
-            <button class="btn btn-success">Bottom Tooltip</button>
-            <span class="tooltip-text">Tooltip on Bottom</span>
-        </div>
+      <h2>Tooltips</h2>
+      <p>Hover over the buttons below to see different tooltip positions:</p>
+      <div class="tooltip">
+          <button class="btn btn-primary">Top Tooltip</button>
+          <span class="tooltip-text">Tooltip on Top</span>
+      </div>
+      <div class="tooltip bottom">
+          <button class="btn btn-success">Bottom Tooltip</button>
+          <span class="tooltip-text">Tooltip on Bottom</span>
+      </div>
+      <div class="tooltip left">
+          <button class="btn btn-danger">Left Tooltip</button>
+          <span class="tooltip-text">Tooltip on Left</span>
+      </div>
+      <div class="tooltip right">
+          <button class="btn btn-blue">Right Tooltip</button>
+          <span class="tooltip-text">Tooltip on Right</span>
+      </div>
     </section>
-    
-    
-    
-    
 
-    <!-- Dropdowns -->
+    <!-- Dropdowns Section -->
     <section id="dropdowns">
-        <h2>Dropdowns</h2>
-        
-        <!-- Default (Bottom) Dropdown -->
-        <div class="dropdown bottom" style="margin-bottom: 20px;">
-          <button class="dropdown-btn">Bottom Dropdown</button>
-          <div class="dropdown-content">
-            <a href="#">Option 1</a>
-            <a href="#">Option 2</a>
-            <a href="#">Option 3</a>
-          </div>
+      <h2>Dropdowns</h2>
+      <!-- Default (Bottom) Dropdown -->
+      <div class="dropdown bottom" style="margin-bottom: 20px;">
+        <button class="dropdown-btn">Bottom Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
         </div>
-        
-        <!-- Top Dropdown -->
-        <div class="dropdown top" style="margin-bottom: 20px;">
-          <button class="dropdown-btn">Top Dropdown</button>
-          <div class="dropdown-content">
-            <a href="#">Option A</a>
-            <a href="#">Option B</a>
-            <a href="#">Option C</a>
-          </div>
+      </div>
+      <!-- Top Dropdown -->
+      <div class="dropdown top" style="margin-bottom: 20px;">
+        <button class="dropdown-btn">Top Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Option A</a>
+          <a href="#">Option B</a>
+          <a href="#">Option C</a>
         </div>
-        
-        <!-- Left Dropdown -->
-        <div class="dropdown left" style="margin-bottom: 20px;">
-          <button class="dropdown-btn">Left Dropdown</button>
-          <div class="dropdown-content">
-            <a href="#">Left 1</a>
-            <a href="#">Left 2</a>
-            <a href="#">Left 3</a>
-          </div>
+      </div>
+      <!-- Left Dropdown -->
+      <div class="dropdown left" style="margin-bottom: 20px;">
+        <button class="dropdown-btn">Left Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Left 1</a>
+          <a href="#">Left 2</a>
+          <a href="#">Left 3</a>
         </div>
-        
-        <!-- Right Dropdown -->
-        <div class="dropdown right" style="margin-bottom: 20px;">
-          <button class="dropdown-btn">Right Dropdown</button>
-          <div class="dropdown-content">
-            <a href="#">Right 1</a>
-            <a href="#">Right 2</a>
-            <a href="#">Right 3</a>
-          </div>
+      </div>
+      <!-- Right Dropdown -->
+      <div class="dropdown right" style="margin-bottom: 20px;">
+        <button class="dropdown-btn">Right Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Right 1</a>
+          <a href="#">Right 2</a>
+          <a href="#">Right 3</a>
         </div>
-      </section>
-      
+      </div>
+    </section>
 
-    <!-- Tables -->
+    <!-- Tables Section -->
     <section id="tables">
         <h2>Tables</h2>
-        
-        <!-- Default Table -->
-        <table class="table-default">
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Role</th>
-          </tr>
-          <tr>
-            <td>John Doe</td>
-            <td>30</td>
-            <td>Developer</td>
-          </tr>
-          <tr>
-            <td>Jane Smith</td>
-            <td>28</td>
-            <td>Designer</td>
-          </tr>
-        </table>
-      
-        <!-- Striped Table -->
-        <table class="table-striped">
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Role</th>
-          </tr>
-          <tr>
-            <td>Alice</td>
-            <td>35</td>
-            <td>Manager</td>
-          </tr>
-          <tr>
-            <td>Bob</td>
-            <td>40</td>
-            <td>Engineer</td>
-          </tr>
-        </table>
-      
-        <!-- Bordered Table -->
-        <table class="table-bordered">
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Department</th>
-          </tr>
-          <tr>
-            <td>Charlie</td>
-            <td>25</td>
-            <td>Marketing</td>
-          </tr>
-          <tr>
-            <td>Dana</td>
-            <td>32</td>
-            <td>Sales</td>
-          </tr>
-        </table>
-      </section>
 
-    <!-- Modal -->
+        <!-- Default Table -->
+        <h3>Default Table</h3>
+        <table class="table-default">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Role</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>28</td>
+                <td>Designer</td>
+            </tr>
+        </table>
+
+        <!-- Primary Table -->
+        <h3>Primary Color Table</h3>
+        <table class="table-primary">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>35</td>
+                <td>Marketing</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>40</td>
+                <td>Engineering</td>
+            </tr>
+        </table>
+
+        <!-- Success Table -->
+        <h3>Success Color Table</h3>
+        <table class="table-success">
+            <tr>
+                <th>Name</th>
+                <th>Experience</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>5 years</td>
+                <td>Sales</td>
+            </tr>
+            <tr>
+                <td>Dana</td>
+                <td>8 years</td>
+                <td>HR</td>
+            </tr>
+        </table>
+
+        <!-- Orange Table -->
+        <h3>Danger Color Table</h3>
+        <table class="table-orange">
+            <tr>
+                <th>Product</th>
+                <th>Stock</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>3</td>
+                <td>Low Stock</td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>0</td>
+                <td>Out of Stock</td>
+            </tr>
+        </table>
+
+        <!-- Green Table -->
+        <h3>Warning Color Table</h3>
+        <table class="table-green">
+            <tr>
+                <th>Task</th>
+                <th>Deadline</th>
+                <th>Priority</th>
+            </tr>
+            <tr>
+                <td>Update Website</td>
+                <td>3 days</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td>Prepare Report</td>
+                <td>1 day</td>
+                <td>High</td>
+            </tr>
+        </table>
+
+        <!-- Red Table -->
+        <h3>Info Color Table</h3>
+        <table class="table-red">
+            <tr>
+                <th>Project</th>
+                <th>Progress</th>
+                <th>Team</th>
+            </tr>
+            <tr>
+                <td>App Development</td>
+                <td>70%</td>
+                <td>Frontend</td>
+            </tr>
+            <tr>
+                <td>Marketing Campaign</td>
+                <td>50%</td>
+                <td>Sales</td>
+            </tr>
+        </table>
+
+    </section>
+
+
+    <!-- Modals Section -->
     <section id="modals">
       <h2>Modals</h2>
       <button data-modal="sampleModal" class="btn btn-primary">Open Modal</button>
@@ -226,7 +294,7 @@
         </div>
       </div>
     </section>
-
+    
   </main>
 
   <!-- JavaScript Modules -->

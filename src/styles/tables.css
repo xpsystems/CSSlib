@@ -59,30 +59,30 @@ tr:hover {
 /* Table Header Color Variants */
 /* Use these classes on your table element to override the default header color */
 
-.table-header-red th {
+.table-red th {
     background: var(--red);
 }
-.table-header-blue th {
+.table-blue th {
     background: var(--blue);
 }
-.table-header-green th {
+.table-green th {
     background: var(--green);
 }
-.table-header-orange th {
+.table-orange th {
     background: var(--orange);
 }
-.table-header-purple th {
+.table-purple th {
     background: var(--purple);
 }
-.table-header-pink th {
+.table-pink th {
     background: var(--pink);
 }
-.table-header-aqua th {
+.table-aqua th {
     background: var(--aqua);
 }
-.table-header-lime th {
+.table-lime th {
     background: var(--lime);
 }
-.table-header-info th {
+.table-info th {
     background: var(--info-color);
 }
