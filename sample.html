@@ -6,14 +6,16 @@
   <title>CSSlib Samples</title>
   <link rel="stylesheet" href="src/styles/main.css" />
   <link rel="stylesheet" href="src/styles/navbar.css" />
-  <!-- Additional inline style to offset fixed navbar -->
+  <link rel="stylesheet" href="src/styles/buttons.css" />
   <style>
+    /* Offset main content for fixed navbar */
     main.container {
       padding-top: 100px;
     }
   </style>
 </head>
 <body data-theme="light">
+  
   <!-- Fixed Navbar -->
   <nav class="navbar">
     <div class="container">
@@ -24,6 +26,7 @@
         <li class="dropdown-nav">
           <a href="#" class="dropdown-btn">Components ▾</a>
           <ul class="dropdown-menu">
+            <li><a href="#buttons">Buttons</a></li>
             <li><a href="#dropdowns">Dropdowns</a></li>
             <li><a href="#tables">Tables</a></li>
             <li><a href="#modals">Modals</a></li>
@@ -37,23 +40,36 @@
   <main class="container">
     <h1>CSSlib Component Samples</h1>
 
+    <!-- 🟢 BUTTONS SECTION -->
+    <section id="buttons">
+      <h2>Buttons</h2>
+      
+      <!-- Filled Buttons -->
+      <h3>Filled Buttons</h3>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-blue">Blue</button>
+      <button class="btn btn-orange">Orange</button>
+
+      <!-- Outline Buttons -->
+      <h3>Outline Buttons</h3>
+      <button class="btn btn-outline" style="--btn-color: var(--red);">Red</button>
+      <button class="btn btn-outline" style="--btn-color: var(--blue);">Blue</button>
+      <button class="btn btn-outline" style="--btn-color: var(--green);">Green</button>
+      <button class="btn btn-outline" style="--btn-color: var(--purple);">Purple</button>
+      <button class="btn btn-outline" style="--btn-color: var(--pink);">Pink</button>
+      <button class="btn btn-outline" style="--btn-color: var(--yellow);">Yellow</button>
+    </section>
+
     <!-- Alerts -->
     <section id="alerts">
       <h2>Alerts</h2>
-      <!-- Timed alert (auto-closes in 4000ms) -->
-      <div class="alert success" data-timeout="4000">
-        Success Alert (auto-close)! <span class="close-btn">&times;</span>
-      </div>
-      <div class="alert warning" data-timeout="5000">
-        Warning Alert (auto-close)! <span class="close-btn">&times;</span>
-      </div>
-      <!-- Manual close alerts -->
-      <div class="alert danger">
-        Error Alert (manual close)! <span class="close-btn">&times;</span>
-      </div>
-      <div class="alert warning">
-        Warning Alert (manual close)! <span class="close-btn">&times;</span>
-      </div>
+      <div class="alert success" data-timeout="4000">Success Alert! <span class="close-btn">&times;</span></div>
+      <div class="alert warning" data-timeout="5000">Warning Alert! <span class="close-btn">&times;</span></div>
+      <div class="alert danger">Error Alert! <span class="close-btn">&times;</span></div>
+      <div class="alert warning">Warning Alert! <span class="close-btn">&times;</span></div>
     </section>
 
     <!-- Tooltips -->
@@ -65,7 +81,7 @@
       </span>
     </section>
 
-    <!-- Dropdowns (Sample outside navbar) -->
+    <!-- Dropdowns -->
     <section id="dropdowns">
       <h2>Dropdowns</h2>
       <div class="dropdown">
@@ -100,17 +116,13 @@
       </table>
     </section>
 
-    <!-- Modal Trigger & Modal -->
+    <!-- Modal -->
     <section id="modals">
       <h2>Modals</h2>
-      <!-- Button with data-modal attribute triggers modal -->
       <button data-modal="sampleModal" class="btn btn-primary">Open Modal</button>
-      <!-- Modal Overlay -->
       <div id="modalOverlay" class="modal-overlay"></div>
-      <!-- Modal Structure -->
       <div id="sampleModal" class="modal">
         <div class="modal-content">
-          <!-- Close "X" button at the top right -->
           <button class="modal-close">&times;</button>
           <h3>Sample Modal</h3>
           <p>This modal adapts to both light and dark themes!</p>
@@ -119,23 +131,6 @@
       </div>
     </section>
 
-    <!-- Additional Samples -->
-    <section>
-      <h2>Additional Component Samples</h2>
-      <!-- Card Sample -->
-      <div class="card primary">
-        <h3>Primary Card</h3>
-        <p>This card uses the theme variables and adapts to dark mode.</p>
-      </div>
-      <!-- Form Sample -->
-      <form>
-        <div class="form-group">
-          <label for="sampleInput">Sample Input</label>
-          <input type="text" id="sampleInput" placeholder="Enter something..." />
-        </div>
-        <button type="submit" class="btn submit">Submit Form</button>
-      </form>
-    </section>
   </main>
 
   <!-- JavaScript Modules -->
