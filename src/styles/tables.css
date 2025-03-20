@@ -61,10 +61,6 @@ tr:hover {
     background: rgba(0, 0, 0, 0.05);
 }
 
-/* Bordered Table */
-.table-bordered, .table-bordered th, .table-bordered td {
-    border: 2px solid var(--border-color);
-}
 
 /* Captioned Table */
 .caption-top caption {
@@ -107,4 +103,71 @@ tr:hover {
 }
 .table-info th {
     background: var(--info-color);
+}
+
+/* Base Bordered Table */
+.table-bordered {
+    border: 2px solid var(--border-color);
+    border-collapse: collapse;
+}
+
+/* Dynamic Border Colors */
+.border-red,
+.border-red th,
+.border-red td {
+    border-color: var(--red) !important;
+}
+
+.border-blue,
+.border-blue th,
+.border-blue td {
+    border-color: var(--blue) !important;
+}
+
+.border-green,
+.border-green th,
+.border-green td {
+    border-color: var(--green) !important;
+}
+
+.border-yellow,
+.border-yellow th,
+.border-yellow td {
+    border-color: var(--yellow) !important;
+}
+
+.border-orange,
+.border-orange th,
+.border-orange td {
+    border-color: var(--orange) !important;
+}
+
+.border-purple,
+.border-purple th,
+.border-purple td {
+    border-color: var(--purple) !important;
+}
+
+.border-pink,
+.border-pink th,
+.border-pink td {
+    border-color: var(--pink) !important;
+}
+
+.border-aqua,
+.border-aqua th,
+.border-aqua td {
+    border-color: var(--aqua) !important;
+}
+
+.border-lime,
+.border-lime th,
+.border-lime td {
+    border-color: var(--lime) !important;
+}
+
+/* Ensure table cells don't break styling */
+.table-bordered th,
+.table-bordered td {
+    border-width: 2px; /* Ensures consistent thickness */
 }
