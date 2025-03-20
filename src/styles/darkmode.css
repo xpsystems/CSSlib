@@ -8,6 +8,9 @@
     color: white;
     cursor: pointer;
     transition: background 0.3s;
+    width: 65px;
+    height: 45px;
+    border-radius: 50px;
 }
 
 .dark-mode-btn {
