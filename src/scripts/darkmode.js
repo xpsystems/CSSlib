@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const savedTheme = localStorage.getItem("theme") || "light";
     body.setAttribute("data-theme", savedTheme);
 
-    // Update button text based on theme
+    // Update button text based on current theme
     updateDarkModeButton(savedTheme);
 
     darkModeToggle.addEventListener("click", function () {
