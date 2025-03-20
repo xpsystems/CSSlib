@@ -56,8 +56,30 @@ tr:hover {
     font-size: 14px;
 }
 
-/* Table Header Color Variants */
-/* Use these classes on your table element to override the default header color */
+/* Striped Table */
+.table-striped tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Bordered Table */
+.table-bordered, .table-bordered th, .table-bordered td {
+    border: 2px solid var(--border-color);
+}
+
+/* Captioned Table */
+.caption-top caption {
+    caption-side: top;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+/* Table Group Divider */
+.table-group-divider tr:first-child {
+    border-top: 3px solid var(--border-color);
+}
 
 .table-red th {
     background: var(--red);
