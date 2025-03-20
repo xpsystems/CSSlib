@@ -37,29 +37,29 @@
     display: block;
 }
 
-/* Default Position: Bottom */
+/* Default Position: Bottom with gap */
 .dropdown:not(.top):not(.left):not(.right) .dropdown-content,
 .dropdown.bottom .dropdown-content {
-    top: 100%;
+    top: calc(100% + 5px);
     left: 0;
 }
 
-/* Position: Top */
+/* Position: Top with gap */
 .dropdown.top .dropdown-content {
-    bottom: 100%;
+    bottom: calc(100% + 5px);
     left: 0;
 }
 
-/* Position: Left */
+/* Position: Left with gap */
 .dropdown.left .dropdown-content {
     top: 0;
-    right: 100%;
+    right: calc(100% + 5px);
 }
 
-/* Position: Right */
+/* Position: Right with gap */
 .dropdown.right .dropdown-content {
     top: 0;
-    left: 100%;
+    left: calc(100% + 5px);
 }
 
 /* Dropdown Links */
