@@ -42,4 +42,78 @@
   }
   
   /* Dark Mode is automatically handled by the variable override */
-  
+  /* navbar.css - Fixed navbar and dropdowns inside the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--navbar-bg);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 5px var(--shadow-color);
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Dropdown (inside navbar) */
+.navbar .nav-links .dropdown-nav {
+  position: relative;
+}
+
+.navbar .nav-links .dropdown-nav .dropdown-btn {
+  cursor: pointer;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.navbar .nav-links .dropdown-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
+  list-style: none;
+  padding: 0.5rem 0;
+  display: none;
+  min-width: 150px;
+  z-index: 1001;
+}
+
+.navbar .nav-links .dropdown-nav:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav-links .dropdown-nav .dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.navbar .nav-links .dropdown-nav .dropdown-menu li a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+}
+
+/* Dark mode is handled via variables */

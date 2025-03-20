@@ -16,6 +16,7 @@
     transition: background 0.3s, border-color 0.3s;
   }
   
+  /* Modal Overlay */
   .modal-overlay {
     display: none;
     position: fixed;
@@ -27,14 +28,27 @@
     background: rgba(0, 0, 0, 0.5);
   }
   
-  /* Active state to show modal */
+  /* Active state to show modal and overlay */
   .modal.active,
   .modal-overlay.active {
     display: block;
   }
   
-  /* For dark mode, ensure modal uses proper colors */
-  body[data-theme="dark"] {
-    --modal-bg: var(--dark-card-bg);
+  /* Close Button: Positioned at top-right inside modal-content */
+  .modal-content {
+    position: relative;
   }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+  
   
