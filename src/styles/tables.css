@@ -34,8 +34,6 @@ tr:hover {
     background: var(--shadow-color);
 }
 
-/* Additional Table Variants */
-
 /* Bordered Table */
 .table-bordered {
     border: 1px solid var(--border-color);
@@ -101,6 +99,9 @@ tr:hover {
 .table-lime th {
     background: var(--lime);
 }
+.table-yellow th {
+    background: var(--yellow);
+}
 .table-info th {
     background: var(--info-color);
 }
@@ -164,6 +165,12 @@ tr:hover {
 .border-lime th,
 .border-lime td {
     border-color: var(--lime) !important;
+}
+
+.border-yellow,
+.border-yellow th,
+.border-yellow td {
+    border-color: var(--yellow) !important;
 }
 
 /* Ensure table cells don't break styling */

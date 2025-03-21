@@ -29,6 +29,10 @@
     opacity: 0.8;
 }
 
+.btn .outline:hover, .outline:hover{
+    opacity: 1;
+}
+
 /* Outline Variant Modifier */
 /* When a button has both a color variant (e.g., .btn-red) and the .outline class, it becomes an outline button. */
 

@@ -1,5 +1,5 @@
 :root {
-  /* 🎨 Primary Colors */
+  /* Primary Colors */
   --primary-color: #007bff;
   --secondary-color: #6c757d;
   --success-color: #28a745;
@@ -7,7 +7,7 @@
   --warning-color: #ffc107;
   --info-color: #17a2b8;
 
-  /* 🎨 Backgrounds & Text */
+  /* Backgrounds & Text */
   --background-color: #f8f9fa;
   --text-color: #212529;
   --card-bg: #ffffff;
@@ -29,7 +29,7 @@
   --teal: #20c997;
   --cyan: #17a2b8;
 
-  /* 🎨 Elements */
+  /* Elements */
   --input-bg: #ffffff;
   --input-border: #ccc;
   --modal-bg: #ffffff;
@@ -40,11 +40,17 @@
   --theme-btn-text: #f0f0f0;
   --theme-btn-bg: #1c1c1c;
   --theme-btn-bg-hover: #444;
+
+  --alert-success-bg: #d4edda;
+  --alert-success-text: #155724;
+  --alert-success-left: #28a745;
+  --alert-border-left-widh: 5px;
+
 }
 
-/* 🌙 Override variables for Dark Theme */
+/* Override variables for Dark Theme */
 body[data-theme="dark"] {
-  /* 🌙 Dark Mode Colors */
+  /* Dark Mode Colors */
   --primary-color: #1e90ff;
   --secondary-color: #495057;
   --success-color: #218838;
@@ -52,7 +58,7 @@ body[data-theme="dark"] {
   --warning-color: #d39e00;
   --info-color: #138496;
 
-  /* 🌙 Backgrounds & Text */
+  /* Backgrounds & Text */
   --background-color: #121212;
   --text-color: #f0f0f0;
   --card-bg: #1c1c1c;
@@ -61,7 +67,7 @@ body[data-theme="dark"] {
   --border-color: #333;
   --shadow-color: rgba(255, 255, 255, 0.1);
 
-  /* 🌙 Extra Colors */
+  /* Extra Colors */
   --blue: #1e90ff;
   --green: #218838;
   --red: #c82333;
@@ -74,7 +80,7 @@ body[data-theme="dark"] {
   --teal: #168d75;
   --cyan: #128ea6;
 
-  /* 🌙 Elements */
+  /* Elements */
   --input-bg: #262626;
   --input-border: #444;
   --modal-bg: #1c1c1c;
