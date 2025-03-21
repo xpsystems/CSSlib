@@ -19,6 +19,18 @@
   .card.danger { 
     border-left: 5px solid var(--danger-color); 
   }
+  .card.red { 
+    border-left: 5px solid var(--red); 
+  }
+  .card.orange { 
+    border-left: 5px solid var(--orange); 
+  }
+  .card.yellow { 
+    border-left: 5px solid var(--yellow); 
+  }
+  .card.lime { 
+    border-left: 5px solid var(--lime); 
+  }
   
   .card-shadow { 
     box-shadow: 0px 5px 15px var(--shadow-color); 

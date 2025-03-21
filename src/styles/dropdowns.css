@@ -4,6 +4,7 @@
 }
 
 /* Dropdown Button */
+/*
 .dropdown-btn {
     background: var(--primary-color);
     color: white;
@@ -14,10 +15,11 @@
     font-size: 16px;
     transition: background 0.3s;
 }
-
+*/
+/*
 .dropdown-btn:hover {
     background: var(--secondary-color);
-}
+}*/
 
 /* Dropdown Content Base */
 .dropdown-content {
