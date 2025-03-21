@@ -168,7 +168,7 @@ Want to contribute?
 
 ---
 
-##📢 License
+## 📢 License
 CSSlib is open-source under the MIT License.
 
 ---
