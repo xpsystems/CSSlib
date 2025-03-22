@@ -4,9 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSSlib Samples</title>
+  
+  <!-- CSS Variables & Global Styles -->
+  <link rel="stylesheet" href="src/styles/_variables.css" />
   <link rel="stylesheet" href="src/styles/main.css" />
   <link rel="stylesheet" href="src/styles/navbar.css" />
   <link rel="stylesheet" href="src/styles/buttons.css" />
+  
+  <!-- Component Styles -->
+  <link rel="stylesheet" href="src/styles/badges.css" />
+  <link rel="stylesheet" href="src/styles/cards.css" />
+  <link rel="stylesheet" href="src/styles/accordions.css" />
+  <link rel="stylesheet" href="src/styles/progress.css" />
+  
   <style>
     /* Offset main content for fixed navbar */
     main.container {
@@ -30,6 +40,11 @@
             <li><a href="#dropdowns">Dropdowns</a></li>
             <li><a href="#tables">Tables</a></li>
             <li><a href="#modals">Modals</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#cards">Cards</a></li>
+            <li><a href="#accordions">Accordions</a></li>
+            <li><a href="#progress">Progress</a></li>
+            <li><a href="#badges">Badges</a></li>
           </ul>
         </li>
       </ul>
@@ -147,239 +162,235 @@
 
     <!-- Tables Section -->
     <section id="tables">
-        <h2>Tables</h2>
+      <h2>Tables</h2>
 
-        <!-- Default Table -->
-        <h3>Default Table</h3>
-        <table class="table-default">
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Role</th>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>30</td>
-                <td>Developer</td>
-            </tr>
-            <tr>
-                <td>Jane Smith</td>
-                <td>28</td>
-                <td>Designer</td>
-            </tr>
-        </table>
+      <!-- Default Table -->
+      <h3>Default Table</h3>
+      <table class="table-default">
+          <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Role</th>
+          </tr>
+          <tr>
+              <td>John Doe</td>
+              <td>30</td>
+              <td>Developer</td>
+          </tr>
+          <tr>
+              <td>Jane Smith</td>
+              <td>28</td>
+              <td>Designer</td>
+          </tr>
+      </table>
 
-        <!-- Primary Table -->
-        <h3>Primary Color Table</h3>
-        <table class="table-primary">
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Department</th>
-            </tr>
-            <tr>
-                <td>Alice</td>
-                <td>35</td>
-                <td>Marketing</td>
-            </tr>
-            <tr>
-                <td>Bob</td>
-                <td>40</td>
-                <td>Engineering</td>
-            </tr>
-        </table>
+      <!-- Primary Table -->
+      <h3>Primary Color Table</h3>
+      <table class="table-primary">
+          <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Department</th>
+          </tr>
+          <tr>
+              <td>Alice</td>
+              <td>35</td>
+              <td>Marketing</td>
+          </tr>
+          <tr>
+              <td>Bob</td>
+              <td>40</td>
+              <td>Engineering</td>
+          </tr>
+      </table>
 
-        <!-- Success Table -->
-        <h3>Success Color Table</h3>
-        <table class="table-success">
-            <tr>
-                <th>Name</th>
-                <th>Experience</th>
-                <th>Department</th>
-            </tr>
-            <tr>
-                <td>Charlie</td>
-                <td>5 years</td>
-                <td>Sales</td>
-            </tr>
-            <tr>
-                <td>Dana</td>
-                <td>8 years</td>
-                <td>HR</td>
-            </tr>
-        </table>
+      <!-- Success Table -->
+      <h3>Success Color Table</h3>
+      <table class="table-success">
+          <tr>
+              <th>Name</th>
+              <th>Experience</th>
+              <th>Department</th>
+          </tr>
+          <tr>
+              <td>Charlie</td>
+              <td>5 years</td>
+              <td>Sales</td>
+          </tr>
+          <tr>
+              <td>Dana</td>
+              <td>8 years</td>
+              <td>HR</td>
+          </tr>
+      </table>
 
-        <!-- Orange Table -->
-        <h3>Orange Table</h3>
-        <table class="table-orange">
-            <tr>
-                <th>Product</th>
-                <th>Stock</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td>Phone</td>
-                <td>3</td>
-                <td>Low Stock</td>
-            </tr>
-            <tr>
-                <td>Laptop</td>
-                <td>0</td>
-                <td>Out of Stock</td>
-            </tr>
-        </table>
+      <!-- Orange Table -->
+      <h3>Orange Table</h3>
+      <table class="table-orange">
+          <tr>
+              <th>Product</th>
+              <th>Stock</th>
+              <th>Status</th>
+          </tr>
+          <tr>
+              <td>Phone</td>
+              <td>3</td>
+              <td>Low Stock</td>
+          </tr>
+          <tr>
+              <td>Laptop</td>
+              <td>0</td>
+              <td>Out of Stock</td>
+          </tr>
+      </table>
 
-        <!-- Green Table -->
-        <h3>Green Table</h3>
-        <table class="table-green">
-            <tr>
-                <th>Task</th>
-                <th>Deadline</th>
-                <th>Priority</th>
-            </tr>
-            <tr>
-                <td>Update Website</td>
-                <td>3 days</td>
-                <td>Medium</td>
-            </tr>
-            <tr>
-                <td>Prepare Report</td>
-                <td>1 day</td>
-                <td>High</td>
-            </tr>
-        </table>
+      <!-- Green Table -->
+      <h3>Green Table</h3>
+      <table class="table-green">
+          <tr>
+              <th>Task</th>
+              <th>Deadline</th>
+              <th>Priority</th>
+          </tr>
+          <tr>
+              <td>Update Website</td>
+              <td>3 days</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>Prepare Report</td>
+              <td>1 day</td>
+              <td>High</td>
+          </tr>
+      </table>
 
-        <!-- Red Table -->
-        <h3>Red Table</h3>
-        <table class="table-red">
-            <tr>
-                <th>Project</th>
-                <th>Progress</th>
-                <th>Team</th>
-            </tr>
-            <tr>
-                <td>App Development</td>
-                <td>70%</td>
-                <td>Frontend</td>
-            </tr>
-            <tr>
-                <td>Marketing Campaign</td>
-                <td>50%</td>
-                <td>Sales</td>
-            </tr>
-        </table>
+      <!-- Red Table -->
+      <h3>Red Table</h3>
+      <table class="table-red">
+          <tr>
+              <th>Project</th>
+              <th>Progress</th>
+              <th>Team</th>
+          </tr>
+          <tr>
+              <td>App Development</td>
+              <td>70%</td>
+              <td>Frontend</td>
+          </tr>
+          <tr>
+              <td>Marketing Campaign</td>
+              <td>50%</td>
+              <td>Sales</td>
+          </tr>
+      </table>
 
-        <!-- Table with Caption -->
-        <h3>Table with Caption</h3>
-        <table class="table caption-top">
-            <caption>List of Users</caption>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Role</th>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>30</td>
-                <td>Developer</td>
-            </tr>
-            <tr>
-                <td>Jane Smith</td>
-                <td>28</td>
-                <td>Designer</td>
-            </tr>
-        </table>
-        
-        <!-- Striped & Bordered Table -->
-        <h3>Striped & Bordered Table</h3>
-        <table class="table-pink table-striped table-bordered">
-            <tr>
-                <th>Product</th>
-                <th>Stock</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Smartphone</td>
-                <td>20</td>
-                <td>$500</td>
-            </tr>
-            <tr>
-                <td>Laptop</td>
-                <td>10</td>
-                <td>$1200</td>
-            </tr>
-        </table>
+      <!-- Table with Caption -->
+      <h3>Table with Caption</h3>
+      <table class="table caption-top">
+          <caption>List of Users</caption>
+          <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Role</th>
+          </tr>
+          <tr>
+              <td>John Doe</td>
+              <td>30</td>
+              <td>Developer</td>
+          </tr>
+          <tr>
+              <td>Jane Smith</td>
+              <td>28</td>
+              <td>Designer</td>
+          </tr>
+      </table>
+      
+      <!-- Striped & Bordered Table -->
+      <h3>Striped & Bordered Table</h3>
+      <table class="table-pink table-striped table-bordered">
+          <tr>
+              <th>Product</th>
+              <th>Stock</th>
+              <th>Price</th>
+          </tr>
+          <tr>
+              <td>Smartphone</td>
+              <td>20</td>
+              <td>$500</td>
+          </tr>
+          <tr>
+              <td>Laptop</td>
+              <td>10</td>
+              <td>$1200</td>
+          </tr>
+      </table>
 
-        <!-- Table with Group Divider -->
-        <h3>Table with Group Divider</h3>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Department</th>
-                    <th>Manager</th>
-                    <th>Employees</th>
-                </tr>
-            </thead>
-            <tbody class="table-group-divider">
-                <tr>
-                    <td>Engineering</td>
-                    <td>Alice</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Marketing</td>
-                    <td>Bob</td>
-                    <td>30</td>
-                </tr>
-            </tbody>
-        </table>
+      <!-- Table with Group Divider -->
+      <h3>Table with Group Divider</h3>
+      <table class="table">
+          <thead>
+              <tr>
+                  <th>Department</th>
+                  <th>Manager</th>
+                  <th>Employees</th>
+              </tr>
+          </thead>
+          <tbody class="table-group-divider">
+              <tr>
+                  <td>Engineering</td>
+                  <td>Alice</td>
+                  <td>50</td>
+              </tr>
+              <tr>
+                  <td>Marketing</td>
+                  <td>Bob</td>
+                  <td>30</td>
+              </tr>
+          </tbody>
+      </table>
 
-            <!-- Tables with Different Border Colors -->
-            <h3>Tables with Custom Border Colors</h3>
-
-            <!-- Red Border -->
-            <table class="table table-bordered border-red">
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Role</th>
-                </tr>
-                <tr>
-                    <td>John Doe</td>
-                    <td>30</td>
-                    <td>Developer</td>
-                </tr>
-            </table>
-
-            <!-- Blue Border -->
-            <table class="table-yellow table-bordered border-blue">
-                <tr>
-                    <th>Product</th>
-                    <th>Stock</th>
-                    <th>Price</th>
-                </tr>
-                <tr>
-                    <td>Smartphone</td>
-                    <td>20</td>
-                    <td>$500</td>
-                </tr>
-            </table>
-
-            <!-- Green Border -->
-            <table class="table table-bordered border-green">
-                <tr>
-                    <th>Department</th>
-                    <th>Manager</th>
-                    <th>Employees</th>
-                </tr>
-                <tr>
-                    <td>Marketing</td>
-                    <td>Bob</td>
-                    <td>30</td>
-                </tr>
-            </table>
+      <!-- Tables with Custom Border Colors -->
+      <h3>Tables with Custom Border Colors</h3>
+      <!-- Red Border -->
+      <table class="table table-bordered border-red">
+          <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Role</th>
+          </tr>
+          <tr>
+              <td>John Doe</td>
+              <td>30</td>
+              <td>Developer</td>
+          </tr>
+      </table>
+      <!-- Blue Border -->
+      <table class="table-yellow table-bordered border-blue">
+          <tr>
+              <th>Product</th>
+              <th>Stock</th>
+              <th>Price</th>
+          </tr>
+          <tr>
+              <td>Smartphone</td>
+              <td>20</td>
+              <td>$500</td>
+          </tr>
+      </table>
+      <!-- Green Border -->
+      <table class="table table-bordered border-green">
+          <tr>
+              <th>Department</th>
+              <th>Manager</th>
+              <th>Employees</th>
+          </tr>
+          <tr>
+              <td>Marketing</td>
+              <td>Bob</td>
+              <td>30</td>
+          </tr>
+      </table>
     </section>
-
 
     <!-- Modals Section -->
     <section id="modals">
@@ -395,10 +406,182 @@
         </div>
       </div>
     </section>
-    
+
+    <!-- Forms Section -->
+    <section id="forms">
+      <h2>Forms</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" placeholder="John" required />
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="Doe" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </fieldset>
+        <fieldset>
+          <legend>Preferences</legend>
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+          <br />
+          <label for="hobbies">Hobbies:</label>
+          <select id="hobbies" name="hobbies" multiple>
+            <option value="reading">Reading</option>
+            <option value="traveling">Traveling</option>
+            <option value="gaming">Gaming</option>
+            <option value="sports">Sports</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Comments</legend>
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Your message..."></textarea>
+        </fieldset>
+        <button type="submit" class="btn primary">Submit Form</button>
+      </form>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards">
+      <h2>Cards</h2>
+      <div class="card-container">
+        <div class="card primary card-shadow">
+          <img src="src/images/card1.jpg" alt="Card Image 1" />
+          <div class="card-content">
+            <h3>Card Title 1</h3>
+            <p>This is a sample description for card number one.</p>
+            <button class="btn secondary">Learn More</button>
+          </div>
+        </div>
+        <div class="card success card-rounded">
+          <img src="src/images/card2.jpg" alt="Card Image 2" />
+          <div class="card-content">
+            <h3>Card Title 2</h3>
+            <p>This card contains an alternative sample description.</p>
+            <button class="btn secondary">Learn More</button>
+          </div>
+        </div>
+        <div class="card danger card-shadow">
+          <img src="src/images/card3.jpg" alt="Card Image 3" />
+          <div class="card-content">
+            <h3>Card Title 3</h3>
+            <p>A brief description for the third card goes here.</p>
+            <button class="btn secondary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordion Section -->
+    <section id="accordions">
+      <h2>Accordions</h2>
+      <div class="accordion">
+        <div class="accordion-header">Accordion Item 1</div>
+        <div class="accordion-content">
+          <p>This is the content of the first accordion panel.</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Accordion Item 2</div>
+        <div class="accordion-content">
+          <p>This is the content of the second accordion panel, providing additional details.</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Accordion Item 3</div>
+        <div class="accordion-content">
+          <p>The third accordion panel can hold more complex information or even nested elements.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progress Bars Section -->
+    <section id="progress">
+      <h2>Progress Bars &amp; Loaders</h2>
+
+      <!-- Basic Progress Bar -->
+      <div class="progress-container">
+        <h3>Basic Progress Bar (60%)</h3>
+        <div class="progress-bar">
+          <div class="progress-bar-fill progress-60 animate">60%</div>
+        </div>
+      </div>
+
+      <!-- Info Color Progress Bar -->
+      <div class="progress-container">
+        <h3>Info Color Progress Bar (80%)</h3>
+        <div class="progress-bar">
+          <div class="progress-bar-fill progress-80 animate progress-info">80%</div>
+        </div>
+      </div>
+
+      <!-- Warning Color Progress Bar -->
+      <div class="progress-container">
+        <h3>Warning Color Progress Bar (40%)</h3>
+        <div class="progress-bar">
+          <div class="progress-bar-fill progress-40 animate progress-warning">40%</div>
+        </div>
+      </div>
+
+      <!-- Rounded & Shadow Progress Bar -->
+      <div class="progress-container progress-margin">
+        <h3>Rounded &amp; Shadow Progress Bar (70%)</h3>
+        <div class="progress-bar progress-rounded progress-shadow">
+          <div class="progress-bar-fill progress-70 animate">70%</div>
+        </div>
+      </div>
+
+      <!-- Custom Styled Progress Bar -->
+      <div class="progress-container progress-margin">
+        <h3>Custom Styled Progress Bar (90%)</h3>
+        <div class="progress-bar progress-rounded progress-shadow">
+          <div class="progress-bar-fill progress-90 animate progress-orange">90%</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Badges Section -->
+    <section id="badges">
+      <h2>Badges</h2>
+      <p>
+        Notifications: 
+        <span class="badge badge-info">Info</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-danger">Error</span>
+      </p>
+    </section>
+
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed with love using HTML, CSS, and JavaScript.</p>
+    <p>
+      Visit our <a href="#">GitHub</a> repository or check out our <a href="#">Documentation</a> for more details.
+    </p>
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="#" class="social-icon"><!-- e.g., FontAwesome icon for Facebook -->o<i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><!-- Icon for Twitter -->o<i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><!-- Icon for Instagram -->o<i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="legal">
+        &copy; 2025 CSSlib. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  
 
   <!-- JavaScript Modules -->
   <script src="src/scripts/main.js" type="module"></script>
+  <script src="src/scripts/accordions.js" type="module"></script>
 </body>
 </html>

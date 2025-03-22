@@ -1,91 +1,125 @@
 /* 🎨 Basic Form Styling */
 input, select, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 6px;
-    border: 1px solid var(--input-border);
-    font-size: 16px;
-    background: var(--input-bg);
-    color: var(--text-color);
-    transition: border 0.3s, background 0.3s;
-  }
-  
-  input:focus, textarea:focus, select:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 5px var(--primary-color);
-  }
-  
-  /* Form Labels */
-  label {
-    font-weight: 600;
-    display: block;
-    margin-bottom: 6px;
-    color: var(--text-color);
-  }
-  
-  /* Placeholder Styling */
-  input::placeholder, textarea::placeholder {
-    color: var(--secondary-color);
-    opacity: 0.7;
-  }
-  
-  /* Disabled Inputs */
-  input:disabled, textarea:disabled, select:disabled {
-    background: var(--border-color);
-    cursor: not-allowed;
-    opacity: 0.6;
-  }
-  
-  /* Form Groups */
-  .form-group {
-    margin-bottom: 18px;
-  }
-  
-  /* Checkboxes & Radio Buttons */
-  input[type="checkbox"], input[type="radio"] {
-    accent-color: var(--primary-color);
-    transform: scale(1.1);
-    margin-right: 5px;
-  }
-  
-  /* Submit Button */
-  .btn.submit {
-    background: var(--success-color);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 600;
-    transition: background 0.3s, opacity 0.3s;
-  }
-  
-  .btn.submit:hover {
-    opacity: 0.85;
-  }
-  
-  /* Reset Button */
-  .btn.reset {
-    background: var(--danger-color);
-    color: white;
-  }
-  
-  .btn.reset:hover {
-    opacity: 0.85;
-  }
-  
-  /* Form Control - Smaller Size */
-  .form-control-sm {
-    padding: 8px;
-    font-size: 14px;
-  }
-  
-  /* Form Control - Large Size */
-  .form-control-lg {
-    padding: 14px;
-    font-size: 18px;
-  }
-  
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid var(--input-border);
+  font-size: 16px;
+  background: var(--input-bg);
+  color: var(--text-color);
+  transition: border 0.3s, background 0.3s;
+}
+
+/* Improved Textarea for Comments */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* Focus State */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Form Labels */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text-color);
+}
+
+/* Placeholder Styling */
+input::placeholder, textarea::placeholder {
+  color: var(--secondary-color);
+  opacity: 0.7;
+}
+
+/* Disabled Inputs */
+input:disabled, textarea:disabled, select:disabled {
+  background: var(--border-color);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  accent-color: var(--primary-color);
+  transform: scale(1.1);
+  margin-right: 5px;
+}
+
+/* Updated Radio Button Styling for Gender and Others */
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--input-border);
+  border-radius: 50%;
+  position: relative;
+  margin-right: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Submit Button */
+.btn.submit {
+  background: var(--success-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s, opacity 0.3s;
+}
+
+.btn.submit:hover {
+  opacity: 0.85;
+}
+
+/* Reset Button */
+.btn.reset {
+  background: var(--danger-color);
+  color: white;
+}
+
+.btn.reset:hover {
+  opacity: 0.85;
+}
+
+/* Form Control - Smaller Size */
+.form-control-sm {
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Form Control - Large Size */
+.form-control-lg {
+  padding: 14px;
+  font-size: 18px;
+}

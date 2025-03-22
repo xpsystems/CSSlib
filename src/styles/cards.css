@@ -1,41 +1,60 @@
 .card {
-    background: var(--card-bg);
-    color: var(--text-color);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px var(--shadow-color);
-    border: 1px solid var(--border-color);
-    margin: 20px 0;
-  }
-  
-  
-  /* Card Variants */
-  .card.primary { 
-    border-left: 5px solid var(--primary-color); 
-  }
-  .card.success { 
-    border-left: 5px solid var(--success-color); 
-  }
-  .card.danger { 
-    border-left: 5px solid var(--danger-color); 
-  }
-  .card.red { 
-    border-left: 5px solid var(--red); 
-  }
-  .card.orange { 
-    border-left: 5px solid var(--orange); 
-  }
-  .card.yellow { 
-    border-left: 5px solid var(--yellow); 
-  }
-  .card.lime { 
-    border-left: 5px solid var(--lime); 
-  }
-  
-  .card-shadow { 
-    box-shadow: 0px 5px 15px var(--shadow-color); 
-  }
-  .card-rounded { 
-    border-radius: 15px; 
-  }
-  
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px var(--shadow-color);
+  border: 1px solid var(--border-color);
+  margin: 20px 0;
+}
+
+/* Card Variants */
+.card.primary { 
+  border-left: 5px solid var(--primary-color); 
+}
+.card.success { 
+  border-left: 5px solid var(--success-color); 
+}
+.card.danger { 
+  border-left: 5px solid var(--danger-color); 
+}
+.card.red { 
+  border-left: 5px solid var(--red); 
+}
+.card.orange { 
+  border-left: 5px solid var(--orange); 
+}
+.card.yellow { 
+  border-left: 5px solid var(--yellow); 
+}
+.card.lime { 
+  border-left: 5px solid var(--lime); 
+}
+
+.card-shadow { 
+  box-shadow: 0px 5px 15px var(--shadow-color); 
+}
+.card-rounded { 
+  border-radius: 15px; 
+}
+
+/* Adjustments for Image Cards */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--border-color);
+}
+
+/* Style for section titles */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Pagination Styling */
+.pagination-container {
+  text-align: center;
+  margin-top: 20px;
+}

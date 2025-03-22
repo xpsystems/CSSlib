@@ -1,0 +1,84 @@
+/* src/styles/progressbars.css */
+.progress-container {
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    background-color: var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    width: 0;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    transition: width 0.5s ease-in-out;
+    background: var(--fill-color)
+  }
+  
+  /* Animate fill from 0 to target width */
+  .progress-bar-fill.animate {
+    animation: fillAnimation 2s ease-in-out forwards;
+  }
+  
+  @keyframes fillAnimation {
+    from { width: 0; }
+    to { width: var(--fill-percent, 0); }
+  }
+  
+  /* Fill percentage classes (no inline styles needed) */
+  .progress-0  { --fill-percent: 0%; }
+  .progress-10 { --fill-percent: 10%; }
+  .progress-20 { --fill-percent: 20%; }
+  .progress-30 { --fill-percent: 30%; }
+  .progress-40 { --fill-percent: 40%; }
+  .progress-50 { --fill-percent: 50%; }
+  .progress-60 { --fill-percent: 60%; }
+  .progress-70 { --fill-percent: 70%; }
+  .progress-80 { --fill-percent: 80%; }
+  .progress-90 { --fill-percent: 90%; }
+  .progress-100 { --fill-percent: 100%; }
+
+  /* Fill color classes */
+  .progress-orange  { --fill-color: var(--orange); }
+  .progress-red  { --fill-color: var(--red); }
+  .progress-yellow  { --fill-color: var(--yellow); }
+  .progress-green  { --fill-color: var(--green); }
+  .progress-blue  { --fill-color: var(--blue); }
+  .progress-lime  { --fill-color: var(--lime); }
+  .progress-pink  { --fill-color: var(--pink); }
+  .progress-purple  { --fill-color: var(--purple); }
+  .progress-aqua  { --fill-color: var(--aqua); }
+  
+  /* Additional color variants */
+  .progress-info {
+    background-color: var(--info-color) !important;
+  }
+  .progress-warning {
+    background-color: var(--warning-color) !important;
+  }
+  .progress-danger {
+    background-color: var(--danger-color) !important;
+  }
+
+  
+  /* Extra classes for rounded corners, shadows, and margins */
+  .progress-rounded {
+    border-radius: 10px;
+  }
+  
+  .progress-shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .progress-margin {
+    margin-top: 30px;
+  }
+  

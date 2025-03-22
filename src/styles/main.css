@@ -16,6 +16,8 @@
 @import url('animations.css');
 @import url('darkmode.css');
 @import url('navbar.css');
+@import url('progressbars.css');
+@import url('footer.css');
 
 /* Scroll-to-Top Button */
 #scrollTopBtn {
