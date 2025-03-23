@@ -6,33 +6,40 @@
   box-shadow: 0px 4px 6px var(--shadow-color);
   border: 1px solid var(--border-color);
   margin: 20px 0;
+  border-left: 5px solid var(--border-left-color)
 }
 
 /* Card Variants */
 .card.primary { 
-  border-left: 5px solid var(--primary-color); 
+  --border-left-color: var(--primary-color); 
 }
 .card.success { 
-  border-left: 5px solid var(--success-color); 
+  --border-left-color: var(--success-color); 
 }
 .card.danger { 
-  border-left: 5px solid var(--danger-color); 
+  --border-left-color: var(--danger-color); 
 }
 .card.red { 
-  border-left: 5px solid var(--red); 
+  --border-left-color: var(--red); 
 }
 .card.orange { 
-  border-left: 5px solid var(--orange); 
+  --border-left-color: var(--orange); 
 }
 .card.yellow { 
-  border-left: 5px solid var(--yellow); 
+  --border-left-color: var(--yellow); 
 }
 .card.lime { 
-  border-left: 5px solid var(--lime); 
+  --border-left-color: var(--lime); 
+}
+.card.teal { 
+  --border-left-color: var(--teal); 
+}
+.card.cyan { 
+  --border-left-color: var(--cyan); 
 }
 
 .card-shadow { 
-  box-shadow: 0px 5px 15px var(--shadow-color); 
+  box-shadow: var(--shadow-color); 
 }
 .card-rounded { 
   border-radius: 15px; 
