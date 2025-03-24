@@ -15,12 +15,11 @@
   .progress-bar-fill {
     height: 100%;
     width: 0;
-    background-color: var(--primary-color);
     text-align: center;
     color: #fff;
     line-height: 20px;
     transition: width 0.5s ease-in-out;
-    background: var(--fill-color)
+    background: var(--fill-color, var(--primary-color));
   }
   
   /* Animate fill from 0 to target width */
@@ -56,6 +55,8 @@
   .progress-pink  { --fill-color: var(--pink); }
   .progress-purple  { --fill-color: var(--purple); }
   .progress-aqua  { --fill-color: var(--aqua); }
+  .progress-black  { --fill-color: var(--black); }
+
   
   /* Additional color variants */
   .progress-info {
