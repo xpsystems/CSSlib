@@ -1,5 +1,7 @@
 /* 🎨 Basic Form Styling */
-input, select, textarea {
+input,
+select,
+textarea {
   display: block;
   width: 100%;
   padding: 12px;
@@ -10,6 +12,7 @@ input, select, textarea {
   background: var(--input-bg);
   color: var(--text-color);
   transition: border 0.3s, background 0.3s;
+  box-sizing: border-box;
 }
 
 /* Improved Textarea for Comments */
@@ -20,7 +23,9 @@ textarea {
 }
 
 /* Focus State */
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 5px var(--primary-color);
@@ -35,13 +40,16 @@ label {
 }
 
 /* Placeholder Styling */
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: var(--secondary-color);
   opacity: 0.7;
 }
 
 /* Disabled Inputs */
-input:disabled, textarea:disabled, select:disabled {
+input:disabled,
+textarea:disabled,
+select:disabled {
   background: var(--border-color);
   cursor: not-allowed;
   opacity: 0.6;
@@ -57,9 +65,10 @@ input[type="checkbox"] {
   accent-color: var(--primary-color);
   transform: scale(1.1);
   margin-right: 5px;
+  vertical-align: middle;
 }
 
-/* Updated Radio Button Styling for Gender and Others */
+/* 🟢 Custom Radio Buttons */
 input[type="radio"] {
   -webkit-appearance: none;
   appearance: none;
@@ -68,9 +77,10 @@ input[type="radio"] {
   border: 2px solid var(--input-border);
   border-radius: 50%;
   position: relative;
-  margin-right: 5px;
+  margin-right: 6px;
   vertical-align: middle;
   cursor: pointer;
+  background: var(--input-bg);
 }
 
 input[type="radio"]:checked::before {
@@ -80,12 +90,50 @@ input[type="radio"]:checked::before {
   left: 50%;
   width: 10px;
   height: 10px;
-  background: var(--primary-color);
-  border-radius: 50%;
+  border-radius: 77%;
   transform: translate(-50%, -50%);
 }
 
-/* Submit Button */
+/* Radio Color Variants */
+.radio-red:checked::before {
+  background: var(--danger-color);
+}
+.radio-blue:checked::before {
+  background: var(--primary-color);
+}
+.radio-green:checked::before {
+  background: var(--success-color);
+}
+.radio-yellow:checked::before {
+  background: var(--yellow);
+}
+.radio-pink:checked::before {
+  background: var(--pink);
+}
+.radio-purple:checked::before {
+  background: var(--purple);
+}
+
+/* 📏 Radio Size Variants */
+input[type="radio"].radio-sm {
+  width: 16px;
+  height: 16px;
+}
+input[type="radio"].radio-sm:checked::before {
+  width: 8px;
+  height: 8px;
+}
+
+input[type="radio"].radio-lg {
+  width: 24px;
+  height: 24px;
+}
+input[type="radio"].radio-lg:checked::before {
+  width: 14px;
+  height: 14px;
+}
+
+/* ✅ Submit Button */
 .btn.submit {
   background: var(--success-color);
   color: white;
@@ -97,28 +145,24 @@ input[type="radio"]:checked::before {
   font-weight: 600;
   transition: background 0.3s, opacity 0.3s;
 }
-
 .btn.submit:hover {
   opacity: 0.85;
 }
 
-/* Reset Button */
+/* ❌ Reset Button */
 .btn.reset {
   background: var(--danger-color);
   color: white;
 }
-
 .btn.reset:hover {
   opacity: 0.85;
 }
 
-/* Form Control - Smaller Size */
+/* 📏 Form Control Sizing */
 .form-control-sm {
   padding: 8px;
   font-size: 14px;
 }
-
-/* Form Control - Large Size */
 .form-control-lg {
   padding: 14px;
   font-size: 18px;

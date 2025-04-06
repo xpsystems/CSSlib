@@ -24,7 +24,7 @@
     }
   </style>
 </head>
-<body data-theme="light">
+<body data-theme="dark">
   
   <!-- Fixed Navbar -->
   <nav class="navbar">
@@ -411,41 +411,74 @@
     <section id="forms">
       <h2>Forms</h2>
       <form action="#" method="post">
+      
+        <!-- Personal Information -->
         <fieldset>
           <legend>Personal Information</legend>
-          <label for="fname">First Name:</label>
-          <input type="text" id="fname" name="fname" placeholder="John" required />
-          <label for="lname">Last Name:</label>
-          <input type="text" id="lname" name="lname" placeholder="Doe" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        
+          <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="John" required />
+          </div>
+        
+          <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Doe" required />
+          </div>
+        
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
         </fieldset>
+      
+        <!-- Preferences -->
         <fieldset>
           <legend>Preferences</legend>
-          <label>Gender:</label>
-          <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female" />
-          <label for="female">Female</label>
-          <input type="radio" id="other" name="gender" value="other" />
-          <label for="other">Other</label>
-          <br />
-          <label for="hobbies">Hobbies:</label>
-          <select id="hobbies" name="hobbies" multiple>
-            <option value="reading">Reading</option>
-            <option value="traveling">Traveling</option>
-            <option value="gaming">Gaming</option>
-            <option value="sports">Sports</option>
-          </select>
+        
+          <div class="form-group">
+            <label>Gender:</label>
+            <div>
+              <label>
+                <input type="radio" name="gender" value="male" class="radio-blue radio-sm" checked />
+                Male
+              </label>
+              <label>
+                <input type="radio" name="gender" value="female" class="radio-pink radio-sm" />
+                Female
+              </label>
+              <label>
+                <input type="radio" name="gender" value="other" class="radio-yellow radio-sm" />
+                Other
+              </label>
+            </div>
+          </div>
+        
+          <div class="form-group">
+            <label for="hobbies">Hobbies:</label>
+            <select id="hobbies" name="hobbies" multiple>
+              <option value="reading">Reading</option>
+              <option value="traveling">Traveling</option>
+              <option value="gaming">Gaming</option>
+              <option value="sports">Sports</option>
+            </select>
+          </div>
         </fieldset>
+      
+        <!-- Additional Comments -->
         <fieldset>
           <legend>Additional Comments</legend>
-          <label for="comments">Comments:</label>
-          <textarea id="comments" name="comments" rows="4" placeholder="Your message..."></textarea>
+          <div class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Your message..."></textarea>
+          </div>
         </fieldset>
-        <button type="submit" class="btn primary">Submit Form</button>
+      
+        <!-- Submit Button -->
+        <button type="submit" class="btn submit">Submit Form</button>
       </form>
     </section>
+
 
     <!-- Cards Section -->
     <section id="cards">
@@ -569,9 +602,9 @@
     </p>
     <div class="footer-content">
       <div class="social-icons">
-        <a href="#" class="social-icon"><!-- e.g., FontAwesome icon for Facebook -->o<i class="fab fa-facebook"></i></a>
-        <a href="#" class="social-icon"><!-- Icon for Twitter -->o<i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon"><!-- Icon for Instagram -->o<i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><!-- e.g., FontAwesome icon for Facebook -->i<i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><!-- Icon for Twitter -->i<i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><!-- Icon for Instagram -->i<i class="fab fa-instagram"></i></a>
       </div>
       <div class="legal">
         &copy; 2025 CSSlib. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
