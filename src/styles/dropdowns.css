@@ -42,26 +42,26 @@
 /* Default Position: Bottom with gap */
 .dropdown:not(.top):not(.left):not(.right) .dropdown-content,
 .dropdown.bottom .dropdown-content {
-    top: calc(100% + 5px);
+    top: calc(100% + 2px);
     left: 0;
 }
 
 /* Position: Top with gap */
 .dropdown.top .dropdown-content {
-    bottom: calc(100% + 5px);
+    bottom: calc(100% + 2px);
     left: 0;
 }
 
 /* Position: Left with gap */
 .dropdown.left .dropdown-content {
     top: 0;
-    right: calc(100% + 5px);
+    right: calc(100% + 2px);
 }
 
 /* Position: Right with gap */
 .dropdown.right .dropdown-content {
     top: 0;
-    left: calc(100% + 5px);
+    left: calc(100% + 2px);
 }
 
 /* Dropdown Links */
