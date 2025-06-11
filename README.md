@@ -18,10 +18,11 @@ Developed by **[XPSYSTEMS](https://github.com/xpsystems)**.
 
 ## 📥 Installation  
 
-### Option 1: CDN (Coming Soon)  
+<!---### Option 1: CDN (Coming Soon)  
 ```html
 <link rel="stylesheet" href="https://cdn.csslib.eu/csslib.min.css">
 ````
+-->
 ### Option 2: Download & Include 
 1. Download the ``CSSlib`` source files.
 2. Include ``main.css`` in your HTML file:
