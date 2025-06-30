@@ -58,6 +58,7 @@ A simple card component.
 ---
 ## 🎨 Customization
 CSSlib uses CSS variables for easy theming.
+you can also add as many more themes as you want
 Edit ``_variables.css`` to customize:
 ```css
 :root {
