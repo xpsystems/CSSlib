@@ -161,7 +161,7 @@ body[data-theme="sample"] {
 git clone https://github.com/xpsystems/CSSlib.git
 cd CSSlib
 ````
-### Run Locally (with Live Server)
+### Run Locally 
 Use VS Code Live Server to preview changes.
 Or manually open index.html in a browser. 
 ### Contribute
