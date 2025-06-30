@@ -149,6 +149,10 @@ body[data-theme="dark"] {
   --theme-btn-bg: #f0f0f0;
   --theme-btn-bg-hover: #ccc;
 }
+
+body[data-theme="sample"] {
+  --primary-color: red;
+}
 ```
 ---
 ## 🛠 Development & Contribution
